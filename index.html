@@ -7,10 +7,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+
+
+    <!-- css saya -->
+    <style >
+      section{
+        min-height: 420px;
+      }
+    </style>
 
     <title>Manin</title>
   </head>
-  <body>
+  <body class="mt-20">
     
 
     <!-- navbar -->
@@ -40,7 +49,7 @@
       <!-- jumbotron -->
       <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
-          <img src="img/me.jpg" width="200" class="rounded-circle">
+          <img src="img/me.jpg" width="25%" class="rounded-circle img-thumbnail">
           <h1 class="display-4">Manin</h1>
           <p class="lead">Selamat datang di Teknik Informatika Unindra.</p>
         </div>
@@ -49,8 +58,9 @@
 
 
       <!-- about -->
+      <section id="about" class="about">
       <div class="container">
-        <div class="row">
+        <div class="row mb-5">
           <div class="col text-center">
             
             <h1> About</h1>
@@ -58,8 +68,8 @@
           </div>
         </div>
 
-        <div class="row text-justify">
-          <div class="col">
+        <div class="row justify-content-center">
+          <div class="col-md-5 text-justify">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -68,7 +78,7 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
 
-          <div class="col">
+          <div class="col-md-5 text-justify">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -78,20 +88,22 @@
           </div>
         </div>
       </div>
+      </section>
       <!-- akhir about -->
 
     
 
     <!-- portofolio -->
+    <section id="portofolio" class="portofolio bg-light pb-4">
     <div class="container">
-      <div class="row">
+      <div class="row mb-4 pt-4">
         <div class="col text-center">
-          <h1> Portofolio </h1>
+          <h2> Portofolio </h2>
         </div>
       </div>
 
 
-      <div class="row">
+      <div class="row mb-4">
         <div class="col-md">
            <div class="card" >
               <img src="img/enam.jpg" class="card-img-top" alt="...">
@@ -121,7 +133,7 @@
       </div>
 
       <!-- gambar baris 2 -->
-      <div class="row">
+      <div class="row mb-4">
         <div class="col-md">
            <div class="card" >
               <img src="img/tiga.jpg" class="card-img-top" alt="...">
@@ -151,9 +163,83 @@
       </div>
 
     </div>
+    </section>
     <!-- akhir portofolio -->
 
 
+    <!-- contact -->
+    <section id="contact" class="contact mb-4">
+      <div class="container">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2> Contact Us</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+                 <div class="card text-white bg-primary mb-3 text-center" >
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Contact Us</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                 </div>
+
+                 <ul class="list-group">
+                    <li class="list-group-item"><h1> Location </h1></li>
+                    <li class="list-group-item">My Office</li>
+                    <li class="list-group-item">Jl. merak 2</li>
+                    <li class="list-group-item">West Java, Indonesia</li>
+                   
+                  </ul>
+         </div>
+
+
+         <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukan nama">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukan email">
+              </div>
+
+              <div class="form-group">
+                <label for="notelp">No Telpon</label>
+                <input type="text" class="form-control" id="notelp" placeholder="Masukan no telpon">
+              </div>
+
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" placeholder="Masukan pesan" class="form-control"></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="sumbit" class="bbtn btn-primary"> Kirim </button>
+              </div>
+              
+            </form>
+         </div>
+      </div>
+    </section>
+    <!-- akhor contact -->
+
+
+    <!-- footer -->
+     <footer class="bg-dark text-white">
+       <div class="container text-center pt-3">
+         <div class="row">
+           <div class="col">
+              <p> Copyright 2020.</p>
+           </div>
+         </div>
+       </div>
+     </footer>
+    <!-- akhir footer -->
 
 
 
